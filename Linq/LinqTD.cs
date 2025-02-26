@@ -50,8 +50,9 @@
         /**
 		 * Cette fonction retourne l'age moyen dans la séquence pour les objets non supprimés
 		 */
-        public static double AgeAverageOfSequence(IEnumerable<DummyModel> objectSequence) {
-            throw new NotImplementedException();
+        public static double AgeAverageOfSequence(IEnumerable<DummyModel> objectSequence)
+        {
+            return objectSequence.Where(model => model.IsDeleted).Average(model => model.Age);
         }
 
         /**
