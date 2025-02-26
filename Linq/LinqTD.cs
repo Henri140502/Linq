@@ -36,7 +36,7 @@
 		 * Cette fonction doit retourner un tuple (min, max) de la séquence
 		 */
         public static (int, int) MinMaxOfSequence(IEnumerable<int> intSequence) {
-            throw new NotImplementedException();
+            return (intSequence.Min(), intSequence.Max());
         }
 
         /**
