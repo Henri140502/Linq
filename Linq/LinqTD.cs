@@ -29,7 +29,7 @@
 		 * Cette fonction doit retourner la moyenne des éléments uniques (sans les duplications) de la séquence fournie en paramètre
 		 */
         public static double AverageOfUniqueSequenceElements(IEnumerable<int> intSequence) {
-            throw new NotImplementedException();
+            return intSequence.Distinct().Average();
         }
 
         /**
