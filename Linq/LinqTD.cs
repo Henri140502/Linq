@@ -59,7 +59,7 @@
 		 * Cette fonction retourne vrai si l'un des membres dans la séquence a un age egal à celui donné en paramètres
 		 */
         public static bool DoesSomeonesHasASpecificAge(IEnumerable<DummyModel> objectSequence, int age) {
-            throw new NotImplementedException();
+            return objectSequence.Any(model => model.Age == age);
         }
     }
 }
