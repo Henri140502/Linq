@@ -13,7 +13,7 @@
 		 * Cette fonction doit retourner le premier element de la séquence de la taille fournie en parametre
 		 */
         public static string? FirstElementOfLengthI(IEnumerable<string> sequence, int size) {
-            throw new NotImplementedException();
+            return sequence.FirstOrDefault(s => s.Length == size);
         }
 
         /**
