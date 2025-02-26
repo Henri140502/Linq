@@ -12,15 +12,17 @@
         /**
 		 * Cette fonction doit retourner le premier element de la séquence de la taille fournie en parametre
 		 */
-        public static string? FirstElementOfLengthI(IEnumerable<string> sequence, int size) {
+        public static string? FirstElementOfLengthI(IEnumerable<string> sequence, int size) 
+        {
             return sequence.FirstOrDefault(s => s.Length == size);
         }
 
         /**
 		 * Cette fonction doit retourner la moyenne de la séquence fournie en paramètre
 		 */
-        public static double AverageOfSequence(IEnumerable<int> intSequence) {
-            throw new NotImplementedException();
+        public static double AverageOfSequence(IEnumerable<int> intSequence)
+        {
+            return intSequence.Average();
         }
 
         /**
