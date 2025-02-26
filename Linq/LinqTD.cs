@@ -42,8 +42,9 @@
         /**
 		 * Cette fonction doit retourner la liste des ids des objets de la séquence
 		 */
-        public static IEnumerable<int> IdsListOfSequence(IEnumerable<DummyModel> objectSequence) {
-            throw new NotImplementedException();
+        public static IEnumerable<int> IdsListOfSequence(IEnumerable<DummyModel> objectSequence)
+        {
+            return objectSequence.Select(model => model.Id);
         }
 
         /**
