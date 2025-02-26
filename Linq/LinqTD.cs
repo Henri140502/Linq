@@ -52,7 +52,7 @@
 		 */
         public static double AgeAverageOfSequence(IEnumerable<DummyModel> objectSequence)
         {
-            return objectSequence.Where(model => model.IsDeleted).Average(model => model.Age);
+            return objectSequence.Where(model => !model.IsDeleted).Average(model => model.Age);
         }
 
         /**
