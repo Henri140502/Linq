@@ -4,8 +4,9 @@
 		 * Cette fonction doit filtrer la séquence pour ne garder que les entrées commencant par une
 		 * lettre fournie en parametre
 		 */
-        public static IEnumerable<string> FilterElementsBeginningWithSpecificLetter(IEnumerable<string> sequence, char letter) {
-            throw new NotImplementedException();
+        public static IEnumerable<string> FilterElementsBeginningWithSpecificLetter(IEnumerable<string> sequence, char letter)
+        {
+            return sequence.Where(s => s.StartsWith(letter.ToString(), StringComparison.OrdinalIgnoreCase));
         }
 
         /**
